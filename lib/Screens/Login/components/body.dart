@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:login/Screens/Login/components/background.dart';
+import 'package:login/Screens/Login/components/forgot_password.dart';
 import 'package:login/Screens/Login/components/rounded_input_field.dart';
 import 'package:login/Screens/Login/components/rounded_password_field.dart';
 
@@ -23,12 +23,12 @@ class Body extends StatelessWidget {
           children: <Widget>[
             Text(
               'LOGIN',
-              style: TextStyle(fontWeight: FontWeight.bold),
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
             ),
             SizedBox(height: size.height * 0.040),
-            SvgPicture.asset('assets/icons/login.svg',
-                height: size.height * 0.30),
-            SizedBox(height: size.height * 0.040),
+            // SvgPicture.asset('assets/icons/boy.svg',
+            //     height: size.height * 0.30),
+            // SizedBox(height: size.height * 0.040),
             RoundedInputField(
               hintText: 'Email',
               onChanged: (value) {},
@@ -40,7 +40,21 @@ class Body extends StatelessWidget {
               text: 'LOGIN',
               press: () {},
             ),
-            SizedBox(height: size.height * 0.020),
+            SizedBox(height: size.height * 0.010),
+
+            ForgotPasswordCheck(
+              press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return SignUpScreen();
+                    },
+                  ),
+                );
+              },
+            ),
+            SizedBox(height: size.height * 0.010),
             AlreadyHaveAnAccountCheck(
               press: () {
                 Navigator.push(

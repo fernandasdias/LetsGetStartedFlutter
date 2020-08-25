@@ -51,7 +51,11 @@ flutter:
       - assets/images/main_bottom.png
       - assets/images/main_top.png
       - assets/images/signup_top.png
+      - assets/images/undraw_woman.svg
+     
+      - assets/icons/coffee.svg
       - assets/icons/chat.svg
+      - assets/icons/boy.svg
       - assets/icons/facebook.svg
       - assets/icons/google-plus.svg
       - assets/icons/login.svg
@@ -72,10 +76,11 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   # fonts:
-  #   - family: Schyler
+  #   - family: BalooTamma
   #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
+  #       - asset: fonts/BalooTamma2-Regular.ttf
+  #       - asset: fonts/BalooTamma2-Bold.ttf
+  #       - asset: fonts/BalooTamma2-SemiBold.ttf
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:

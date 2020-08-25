@@ -13,19 +13,23 @@ class AlreadyHaveAnAccountCheck extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var size = MediaQuery.of(context).size;
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         Text(
           login ? 'Dont have an Account? ' : 'Already have an Account? ',
-          style: TextStyle(color: kPrimaryGrayColor),
+          style: TextStyle(color: kPrimaryTextColor),
+        ),
+        SizedBox(
+          height: size.height * 0.05,
         ),
         GestureDetector(
           onTap: press,
           child: Text(
-            login ? 'Sign Up' : 'Sign In',
+            login ? 'Sign Up' : 'Log In',
             style: TextStyle(
-              color: kPrimaryColor,
+              color: kPrimaryGreenColor,
               fontWeight: FontWeight.bold,
             ),
           ),

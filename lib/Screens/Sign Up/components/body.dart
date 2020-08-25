@@ -20,12 +20,15 @@ class Body extends StatelessWidget {
         children: <Widget>[
           Text(
             'SIGNUP',
-            style: TextStyle(fontWeight: FontWeight.bold),
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 18,
+            ),
           ),
           SizedBox(height: size.height * 0.040),
           SvgPicture.asset(
-            'assets/icons/signup.svg',
-            height: size.height * 0.30,
+            'assets/icons/coffee.svg',
+            height: size.height * 0.15,
           ),
           SizedBox(height: size.height * 0.040),
           RoundedInputField(

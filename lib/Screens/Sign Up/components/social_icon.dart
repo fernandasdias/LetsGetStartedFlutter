@@ -22,7 +22,7 @@ class SocialIcon extends StatelessWidget {
         decoration: BoxDecoration(
           border: Border.all(
             width: 2,
-            color: kPrimaryLightColor,
+            color: kPrimaryGrayColor,
           ),
           shape: BoxShape.circle,
         ),
