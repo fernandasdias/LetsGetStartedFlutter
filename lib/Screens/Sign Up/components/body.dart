@@ -19,16 +19,11 @@ class Body extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Text(
-            'SIGNUP',
+            'SIGN UP',
             style: TextStyle(
               fontWeight: FontWeight.bold,
-              fontSize: 18,
+              fontSize: 25,
             ),
-          ),
-          SizedBox(height: size.height * 0.040),
-          SvgPicture.asset(
-            'assets/icons/coffee.svg',
-            height: size.height * 0.15,
           ),
           SizedBox(height: size.height * 0.040),
           RoundedInputField(
@@ -39,7 +34,7 @@ class Body extends StatelessWidget {
             onChanged: (value) {},
           ),
           RoundedButton(
-            text: 'SIGNUP',
+            text: 'SIGN UP',
             press: () {},
           ),
           SizedBox(height: size.height * 0.020),
